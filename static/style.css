@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #f2dace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  padding: 20px;
+  background-color: #d49a9a;
+  border-radius: 20px;
+  box-shadow: 0 -8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.form-section {
+  padding: 10px;
+  background-color: #aa5e7a;
+  border-radius: 20px;
+}
+
+.form-section-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-section-text-title {
+  font-size: 32px;
+  font-weight: 500;
+  color: #7c0e44;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  width: 250px;
+  height: 36px;
+  border-radius: 10px;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #7c0e44;
+  color: #f2dace;
+  border: none;
+  border-radius: 10px;
+  height: 36px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Open Sans" , sans-serif;
+}
+
+.pred{
+  margin-top: 10px;
+  color: #f2dace;
+  font-weight: 500;
+  margin-left: 130px;
+}

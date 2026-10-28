@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='style.css') }}">
+    <title>Zoo (AI) Train</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="form-section">
+            <div class="form-section-text">
+                <h3 class="form-section-text-title">
+                    Welcome to my small (AI)
+                </h3>
+                <div class="form-section-form">
+                    <form action="/predict" method="POST">
+                        <div class="first">
+                            <input type="number" name="hair" min="0" max="1" required>
+                            <input type="number" name="feathers" min="0" max="1" required>
+                        </div>
+                        <div class="second">
+                            <input type="number" name="eggs" min="0" max="1" required>
+                            <input type="number" name="milk" min="0" max="1" required>
+                        </div>
+                        <div class="third">
+                            <input type="number" name="airborne" min="0" max="1" required>
+                            <input type="number" name="aquatic" min="0" max="1" required>
+                        </div>
+                        <div class="fourth">
+                            <input type="number" name="predator" min="0" max="1" required>
+                            <input type="number" name="toothed" min="0" max="1" required>
+                        </div>
+                        <div class="fiveth">
+                            <input type="number" name="backbone" min="0" max="1" required>
+                            <input type="number" name="breathes" min="0" max="1" required>
+                        </div>
+                        <div class="sixth">
+                            <input type="number" name="venomous" min="0" max="1" required>
+                            <input type="number" name="fins" min="0" max="1" required>
+                        </div>
+                        <div class="seventh">
+                            <input type="number" name="legs" min="0" max="1" required>
+                            <input type="number" name="tail" min="0" max="1" required>
+                        </div>
+                        <div class="eight">
+                            <input type="number" name="domestic" min="0" max="1" required>
+                            <input type="number" name="catsize" min="0" max="1" required>
+                        </div>
+
+                        <button type="submit">Predict</button>
+                    </form>
+
+                    <h3 class="pred">{{ prediction_text }}</h3>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
